@@ -3,12 +3,16 @@
   border: 1px solid red;
   box-sizing: border-box;
 }
+
 /** format position for the user login box **/
+/**
+
 #userLogin {
   text-align: center;
   margin-left: 1000px;
   margin-right: 30px;
 }
+**/
 /** format position for the button one box **/
 #btn1 {
   text-align: center;
