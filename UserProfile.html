@@ -3,22 +3,101 @@
     <title>User Profile</title>
     <!-- linking bootstrap min -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- linking style sheet -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">Logo Job Board</a>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <!-- Buttons for Login and Register -->
+        <div class="navbar-right">
+          <button type="button" class="btn btn-default navbar-btn">Login in</button>
+          <button type="button" class="btn btn-default navbar-btn">Register</button>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav><!-- /.end of nav -->
   <body class="container-fluid">
     <div class="row">
-      <div id="navigationBar">Navigation Bar</div>
-    </div>
-    <div class="row">
-      <div id="profilePic" class="col-md-6">Profile Picture</div>
-      <div id="profileInfo" class="col-md-6">
-        Profile Information
-        <p>
-          Name<br>Job Title<br>Skills<br>Bio<br>
-        </p>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <img src="profile.jpeg" class="img-responsive img-thumbnail" alt="Profile Picture"><br/>
+        <a href="#">User Name</a><br/>
+        <a href="#">Email Address</a><br/>
+        <a href="#">Upload Resume</a><br/>
+      </div>
+      <form class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="form-group input-group">
+          <input type="profile" class="form-control" placeholder="Profile Name">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default">change</button>
+          </div>
+        </div>
+        <div class="form-group input-group">
+          <input type="jobTitle" class="form-control" placeholder="Job Title">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default">change</button>
+          </div>
+        </div>
+        <div class="form-group input-group">
+          <input type="skills" class="form-control" placeholder="Skills">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default">change</button>
+          </div>
+        </div>
+        <div class="form-group input-group">
+          <input type="bio" class="form-control" placeholder="Bio">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default">change</button>
+          </div>
+        </div>
+      </form>
       </div>
     </div>
-    <div class="col-md-12 footer">Social Media Icons and Contact Information</div>
-  </body>
+  </body> <!-- end of body -->
+  <!-- footer -->
+  <div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-5 col-xs-7">
+                  <h3> About Us </h3>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-5 col-xs-7">
+                  <h3> Contact Us </h3>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-5 col-xs-7">
+                  <h3> Join the conversation </h3>
+                  <hr>
+                    <div class="text-center center-center">
+                      <br />
+                        <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                        <a href="https://www.instagram.com"><i id="social-ig" class="fa fa-instagram fa-3x social"></i></a>
+                        <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                        <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    </div>
+                  <hr>
+              </div>
+          </div>
+          <!--/.row-->
+      </div>
+      <!--/.container-->
+  </div>
+  <!--/.footer-->
 </html>
